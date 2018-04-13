@@ -48,7 +48,7 @@ Najprej smo vse podatke prebrali v panda data frame s spodaj napisano funkcijo, 
 
 Ker je tako velika količina podatkov prevelika da bi iz nje lahko kar tako ugotovili določene zanimive lastnosti, smo se odločili da bomo najprej naredili nekaj grafov da dobimo občutek s čem imamo opravka, in da predstavimo nekatere bolj zanimive podatke.
 
-Najprej smo naredili stolpčne diagrame ki nam pokažejo koliko je trending videov glede na kategorijo. To smo naredili za vse države in izkazalo se je da je v večini prevladala kategorija entertainment, le v Nemčiji so očitno bolj priljubljeni videi iz kategorije music.
+Najprej smo naredili stolpčne diagrame ki nam pokažejo koliko je trending videov glede na kategorijo. To smo naredili za vse države in izkazalo se je da je v večini prevladala kategorija entertainment, le v Veliki Britaniji so očitno bolj priljubljeni videi iz kategorije music.
 
 ![Alt text](images/CA_cat.png?raw=true "CA_cat")
 
@@ -57,3 +57,7 @@ Najprej smo naredili stolpčne diagrame ki nam pokažejo koliko je trending vide
 Naslednje nas je zanimalo koliko youtube kanalov ima določeno število videov. Zato smo naredili naslednje grafe iz katerih je razvidno da ima največ kanalov od 11 pa tja do 15 trending videov.
 
 ![Alt text](images/per_channel.png?raw=true "per_channel")
+
+Z naslednjim pie chart-om prikazujemo pričakovan podatek, in sicer je vidno da je razmerje pozitivnih ocen in negativnih močno v prid pozitivnih.
+
+![Alt text](images/pie.png?raw=true "pie")
