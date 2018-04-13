@@ -60,5 +60,5 @@ Naslednje nas je zanimalo koliko youtube kanalov ima določeno število videov. 
 
 Z naslednjim pie chart-om prikazujemo pričakovan podatek, in sicer je vidno da je razmerje pozitivnih ocen in negativnih močno v prid pozitivnih. Variacije po državah so minimalne.
 
-![Alt text](images/pie.png?raw=true "pie") ![Alt text](images/CA_pie.png?raw=true "CA") ![Alt text](images/DE_pie.png?raw=true "DE") ![Alt text](images/GB_pie.png?raw=true "pie")
+![Alt text](images/pie.png?raw=true "pie") ![Alt text](images/CA_pie.png?raw=true "CA") ![Alt text](images/DE_pie.png?raw=true "DE") ![Alt text](images/GB_pie.png?raw=true "GB_pie")
 
