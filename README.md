@@ -1,4 +1,4 @@
-### Podatkovno rudarjenje, koda za vmesno poročilo o opravljenem delu, 12. 4. 2018
+### Podatkovno rudarjenje, vmesno poročilo o opravljenem delu, 12. 4. 2018
 
 # Priprava podatkov in osnovna vizualizacija
 
@@ -10,7 +10,7 @@
 
 ## Podatki
 
-Kratek opis podatkov je bil podan že pri osnutku projekta, tu pa bi si najprej na hitro pogledali kaj točno dani podatki vsebujejo. Link do podatkov(https://www.kaggle.com/datasnaek/youtube-new/data).
+Kratek opis podatkov je bil podan že pri osnutku projekta, tu pa bi si najprej na hitro pogledali kaj točno dani podatki vsebujejo. Gre za podatke o trending videih na strani youtube, link do podatkov(https://www.kaggle.com/datasnaek/youtube-new/data).
 
 Vse podatke ki smo jih dobili s spletne strani Kaggle hranimo v diretktoriju "data" in so sledeči:
 
@@ -21,7 +21,8 @@ Vse podatke ki smo jih dobili s spletne strani Kaggle hranimo v diretktoriju "da
 * *USvideos.csv:* podatki o trendih videih za Združene Države,
 
 Vsak podatek v tej zbirki ima naslednje atribute:
-* *video_id:* je kar link do videa, in je za vsak vnesen podatek unikaten.
+
+* *video_id:* je kar link do videa, in je za vsak vnešen podatek unikaten.
 * *trending_date:* datum, katerega je bil video trending.
 * *title:* naslov videa.
 * *channel_title:* ime youtube kanala ki je video naložil na youtube.
@@ -41,11 +42,18 @@ Vsak podatek v tej zbirki ima naslednje atribute:
 Poleg petih že naštetih csv datotek pa podatkovna zbirka vsebuje še pet json datotek, v katerih je podrobneje opisan atribut *category_id* za vsako regijo. Na kratko povedano nam pove kaj pomeni naprimer category_id = 10 &rarr; "music".
 
 ### Pridobivanje podatkov
+Samo branje podatkov ni bilo težko saj je podatkovna zbirka lepo urejena. Podatke smo prebrali v pandas data frame z preprosto funkcijo, za vsako državo posebej:
 
-Najprej smo vse podatke prebrali v panda data frame s spodaj napisano funkcijo, in v vsaki tabeli spremenili datume tako, da so bolj po našem okusu.
+def read_table(file_name):
+    data = pan.read_csv(file_name, sep=',')
+    return data
+    
+Kar nas je takoj zmotilo je bil format v katerem je bil zapisan datum zato smo ga spremenili v nam bolj domačega:
+YY.DD.MM &rarr; DD.MM.YY
+
 
 ### Nekaj vizualnih predstavitev
-
+Naša podatkovna zbirka vsebuje na dan izdelave tega poročila kar 116739 podatkov, ki pa se skoraj dnevno posodabljajo.
 Ker je tako velika količina podatkov prevelika da bi iz nje lahko kar tako ugotovili določene zanimive lastnosti, smo se odločili da bomo najprej naredili nekaj grafov da dobimo občutek s čem imamo opravka, in da predstavimo nekatere bolj zanimive podatke.
 
 Najprej smo naredili stolpčne diagrame ki nam pokažejo koliko je trending videov glede na kategorijo. To smo naredili za vse države in izkazalo se je da je v večini prevladala kategorija entertainment, le v Veliki Britaniji so očitno bolj priljubljeni videi iz kategorije music.
@@ -61,4 +69,7 @@ Naslednje nas je zanimalo koliko youtube kanalov ima določeno število videov. 
 Z naslednjim pie chart-om prikazujemo pričakovan podatek, in sicer je vidno da je razmerje pozitivnih ocen in negativnih močno v prid pozitivnih. Variacije po državah so minimalne.
 
 ![Alt text](images/pie.png?raw=true "pie") ![Alt text](images/CA_pie.png?raw=true "CA") ![Alt text](images/DE_pie.png?raw=true "DE") ![Alt text](images/GB_pie.png?raw=true "GB_pie")
+
+
+*Koda za zgoraj pridobljene rezultate se nahaja v datoteki project_code.ipynb*
 
