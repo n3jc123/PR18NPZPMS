@@ -44,10 +44,9 @@ Poleg petih že naštetih csv datotek pa podatkovna zbirka vsebuje še pet json 
 ### Kaj nas zanima?
 Pri projektni nalogi želimo ugotoviti:
 * glavne značilnosti trending videov,
-** kako pomembni so "tagi",
 * kakšne in kako velike so razlike po regijah,
 * vpliv časa(npr. koliko časa mine od "uploada" pa do dne ko se video znajde na trending strani?),
-
+* različne odvisnosti atributov.
 
 
 ### Pridobivanje podatkov
