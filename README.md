@@ -41,6 +41,15 @@ Vsak podatek v tej zbirki ima naslednje atribute:
 
 Poleg petih že naštetih csv datotek pa podatkovna zbirka vsebuje še pet json datotek, v katerih je podrobneje opisan atribut *category_id* za vsako regijo. Na kratko povedano nam pove kaj pomeni naprimer category_id = 10 &rarr; "music".
 
+### Kaj nas zanima?
+Pri projektni nalogi želimo ugotoviti:
+* glavne značilnosti trending videov,
+** kako pomembni so "tagi",
+* kakšne in kako velike so razlike po regijah,
+* vpliv časa(npr. koliko časa mine od "uploada" pa do dne ko se video znajde na trending strani?),
+
+
+
 ### Pridobivanje podatkov
 Samo branje podatkov ni bilo težko saj je podatkovna zbirka lepo urejena. Podatke smo prebrali v pandas data frame z preprosto funkcijo, za vsako državo posebej:
 
