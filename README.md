@@ -47,4 +47,4 @@ Najprej smo vse podatke prebrali v panda data frame s spodaj napisano funkcijo, 
 ### Nekaj vizualnih predstavitev
 
 Ker je tako velika količina podatkov prevelika da bi iz nje lahko kar tako ugotovili določene zanimive lastnosti, smo se odločili da bomo najprej naredili nekaj grafov da dobimo občutek s čem imamo opravka, in da predstavimo nekatere bolj zanimive podatke.
-
+![Alt text](images/CA_cat.png?raw=true "CA_cat")
