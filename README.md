@@ -71,5 +71,5 @@ Z naslednjim pie chart-om prikazujemo pričakovan podatek, in sicer je vidno da 
 ![Alt text](images/pie.png?raw=true "pie") ![Alt text](images/CA_pie.png?raw=true "CA") ![Alt text](images/DE_pie.png?raw=true "DE") ![Alt text](images/GB_pie.png?raw=true "GB_pie")
 
 
-*Koda za zgoraj pridobljene rezultate se nahaja v datoteki project_code.ipynb*
+*Koda za zgoraj pridobljene rezultate se nahaja v datoteki project_code.ipynb(https://github.com/n3jc123/PR18NPZPMS/blob/master/project_code.ipynb)*
 
